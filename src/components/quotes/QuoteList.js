@@ -32,8 +32,6 @@ const QuoteList = (props) => {
 			search: `?sort=${isSortingAscending ? 'desc' : 'asc'}`,
 		});
 
-    console.log(location.pathname);
-
   };
 
   return (

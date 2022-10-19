@@ -1,4 +1,4 @@
-import { useReducer, useCallback } from 'react';
+import { useCallback, useReducer } from 'react';
 
 function httpReducer(state, action) {
   if (action.type === 'SEND') {
