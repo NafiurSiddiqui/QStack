@@ -1,8 +1,8 @@
 :root{
 
   /* --primaryBG:teal; */
-  /* --primaryBG:rgb(0, 94, 128); */
-  --primaryBG:rgb(128, 0, 119);
+  --primaryBG:rgb(0, 94, 128);
+
   --primaryTxt: rgb(208, 207, 207);
   --hoverBG:rgb(3, 62, 62);
   --hoverTxt:rgb(220, 219, 219);
