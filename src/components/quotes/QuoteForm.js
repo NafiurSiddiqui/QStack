@@ -52,9 +52,6 @@ const QuoteForm = (props) => {
     
   };
 
-  console.log(isEntering);
-
-
   return (
     <>    
       <Card>

@@ -1,4 +1,4 @@
-const FIREBASE_DOMAIN = 'https://react-router-quotes-b570e-default-rtdb.firebaseio.com/';
+const FIREBASE_DOMAIN = 'https://qstack-nuff-default-rtdb.firebaseio.com/';
 
 
 export async function getAllQuotes() {
