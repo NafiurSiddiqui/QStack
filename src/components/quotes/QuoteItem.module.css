@@ -4,7 +4,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
 	background-color: rgb(35 50 56);
@@ -32,6 +31,11 @@
 .item p {
 	margin: 0;
 	margin-bottom: 0.25rem;
+	width: 90%;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .item figcaption {
