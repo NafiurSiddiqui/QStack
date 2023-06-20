@@ -4,7 +4,8 @@ import { useRef, useState } from 'react';
 import Card from '../UI/Card';
 import LoadingSpinner from '../UI/LoadingSpinner';
 import classes from './QuoteForm.module.css';
-import filteredWords from '../../lib/filteredWords';
+import sanitizeInput from '../../lib/sanitizer';
+import filterInput from '../../lib/filterInput';
 
 const QuoteForm = (props) => {
 	const [isEntering, setIsEntering] = useState(false);
@@ -38,7 +39,16 @@ const QuoteForm = (props) => {
 			return;
 		}
 
-		props.onAddQuote({ author: enteredAuthor, text: enteredText });
+		//sanitize input
+
+		const sanitizedAuthor = sanitizeInput(enteredAuthor);
+		const sanitizedText = sanitizeInput(enteredText);
+
+		//filter out words
+		const filteredAuthor = filterInput(sanitizedAuthor);
+		const filteredText = filterInput(sanitizedText);
+
+		props.onAddQuote({ author: filteredAuthor, text: filteredText });
 	}
 
 	const finishEnteringHandler = () => {
@@ -49,8 +59,6 @@ const QuoteForm = (props) => {
 		setIsEntering(true);
 		setBtnDisable(false);
 	};
-
-	//filter out and sanitize input
 
 	return (
 		<>

@@ -37,4 +37,13 @@ const filteredWords = [
 	'child pornography',
 ];
 
-export default filteredWords;
+const filterInput = (input) => {
+	let filteredInput = input;
+	filteredWords.forEach((word) => {
+		const regex = new RegExp(word, 'gi');
+		filteredInput = filteredInput.replace(regex, '*'.repeat(word.length));
+	});
+	return filteredInput;
+};
+
+export default filterInput;
