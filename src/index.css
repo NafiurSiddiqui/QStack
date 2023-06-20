@@ -1,77 +1,73 @@
-:root{
-
-  --primaryBG:rgb(0, 94, 128);
-  --primaryTxt: rgb(208, 207, 207);
-  --hoverBG:rgb(0, 60, 82);
-  --hoverTxt:rgb(220, 219, 219);
+:root {
+	/* --primaryBG:rgb(0, 94, 128); */
+	--primaryBG: rgb(15 23 26);
+	--primaryTxt: rgb(208, 207, 207);
+	/* --hoverBG: rgb(0, 60, 82); */
+	--hoverBG: rgb(10 243 226);
+	--hoverTxt: rgb(220, 219, 219);
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  margin: 0;
-  background-color: #e7f8f8;
+	font-family: sans-serif;
+	margin: 0;
+	background-color: #fcfcfc;
 }
 
 .centered {
-  margin: 3rem auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin: 3rem auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .focused {
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
 }
 
 .btn {
-  text-decoration: none;
-  background-color: var(--primaryBG);
-  color: white;
-  border-radius: 4px;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid var(--primaryBG);
-  cursor: pointer;
+	text-decoration: none;
+	background-color: rgb(10 30 37);
+	color: white;
+	border-radius: 4px;
+	padding: 0.75rem 1.5rem;
+	border: 1px solid rgb(10 30 37);
+	cursor: pointer;
 }
 
 .btn:hover,
 .btn:active {
-  background-color:var(--hoverBG);
-  border-color:var(--hoverBG);
-  color:var(--hoverTxt);
+	background-color: rgb(5 68 71);
+	border-color: rgb(5 68 71);
 }
 
 .btn:disabled {
-
-  background-color: #a7a7a7;
-  border-color: #a6a6a6;
-  color: rgb(235, 235, 235);
-  cursor: not-allowed;
-  opacity: 0.2;
-  
+	background-color: #a7a7a7;
+	border-color: #a6a6a6;
+	color: rgb(235, 235, 235);
+	cursor: not-allowed;
+	opacity: 0.2;
 }
 
-
-
 .btn--flat {
-  cursor: pointer;
-  font: inherit;
-  color: var(--primaryBG);
-  border: none;
-  background-color: none;
-  text-decoration: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
+	cursor: pointer;
+	font: inherit;
+	color: var(--primaryBG);
+	border: none;
+	background-color: none;
+	text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4px;
 }
 
 .btn--flat:hover,
 .btn--flat:active {
-  background-color: var(--hoverBG);
-  color:var(--hoverTxt);
+	background-color: var(--hoverBG);
+	color: var(--hoverTxt);
 }
