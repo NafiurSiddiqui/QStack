@@ -27,15 +27,9 @@ const QuoteForm = (props) => {
 			return;
 		}
 
-		if (enteredAuthor.length === 0) {
-			setBtnDisable(true);
-			alert("Don't your favourite author deserves some credentials? :/");
-			return;
-		}
-
 		if (enteredText.length === 0) {
 			setBtnDisable(true);
-			alert('Your favorite author quoted nothing? :/');
+			alert('Your favorite author quoted nothing. 🤭');
 			return;
 		}
 
