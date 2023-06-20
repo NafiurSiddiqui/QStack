@@ -2,7 +2,17 @@
 	width: 100%;
 	height: 5rem;
 	display: flex;
-	padding: 0 10%;
+	padding: 0 0.2rem;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primaryBG);
+}
+
+.wrapper {
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	/* padding: 0 10%; */
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--primaryBG);
@@ -11,6 +21,7 @@
 .logo {
 	font-size: 2rem;
 	color: white;
+	font-style: italic;
 }
 
 .nav ul {
@@ -34,4 +45,52 @@
 .nav a:active,
 .nav a.active {
 	color: rgb(98 198 201);
+}
+
+@media (max-width: 480px) {
+	.header {
+		padding: 0 0.8rem;
+	}
+
+	.logo {
+		font-size: 1.2rem;
+	}
+
+	.nav li {
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 481px) and (min-width: 999px) {
+	.header {
+		padding: 0 1rem;
+	}
+
+	.logo {
+		font-size: 1.8rem;
+	}
+
+	.nav li {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.header {
+		padding: 0 1rem;
+	}
+
+	.logo {
+		font-size: 2rem;
+	}
+
+	.nav li {
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 1500px) {
+	.wrapper {
+		width: 80rem;
+	}
 }

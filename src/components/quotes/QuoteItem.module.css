@@ -35,3 +35,43 @@
 	font-style: italic;
 	color: #b6b6b6;
 }
+
+@media (max-width: 480px) {
+	.item blockquote {
+		font-size: 1.2rem;
+	}
+
+	.item figcaption {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 481px) and (min-width: 999px) {
+	.item blockquote {
+		font-size: 1.2rem;
+	}
+
+	.item figcaption {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	item blockquote {
+		font-size: 1.6rem;
+	}
+
+	.item figcaption {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 1500px) {
+	item blockquote {
+		font-size: 1.8rem;
+	}
+
+	.item figcaption {
+		font-size: 1.7rem;
+	}
+}
