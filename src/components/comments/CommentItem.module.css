@@ -1,7 +1,17 @@
 .item {
-  margin: 1rem 0;
-  color: #4a5555;
-  font-size: 1.25rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid teal;;
+	color: #4a5555;
+	font-size: 1.25rem;
+	/* padding: 0.2rem; */
+	text-align: left;
+	border-bottom: 2px solid teal;
+}
+
+.item p {
+	padding: 0 1rem;
+}
+
+@media (min-width: 600px) {
+	.item {
+		text-align: center;
+	}
 }
