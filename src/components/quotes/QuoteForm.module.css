@@ -36,7 +36,6 @@
 
 .control input:focus,
 .control textarea:focus {
-	background-color: #cbf1f8;
 	outline-color: var(--primaryBG);
 }
 
