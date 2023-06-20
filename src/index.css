@@ -2,8 +2,9 @@
 	--primaryBG: rgb(15 23 26);
 	--primaryTxt: rgb(208, 207, 207);
 	--secondary: rgb(35 50 56);
-	--hoverBG: rgb(5 68 71);
+	--hoverBG: rgb(2 86 90);
 	--hoverTxt: rgb(220, 219, 219);
+	--highlighter: rgb(98 198 201);
 }
 
 * {
@@ -42,8 +43,8 @@ body {
 
 .btn:hover,
 .btn:active {
-	background-color: rgb(5 68 71);
-	border-color: rgb(5 68 71);
+	background-color: var(--hoverBG);
+	border-color: var(--hoverBG);
 }
 
 .btn:disabled {
@@ -67,7 +68,7 @@ body {
 
 .btn--flat:hover,
 .btn--flat:active {
-	background-color: var(--hoverBG);
+	background-color: var(--highlighter);
 	color: var(--hoverTxt);
 }
 

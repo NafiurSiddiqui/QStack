@@ -21,5 +21,6 @@
 }
 
 .sorting button:hover {
-	background-color: #c2fafa;
+	background-color: var(--hoverBG);
+	color: white;
 }
