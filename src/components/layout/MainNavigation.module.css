@@ -27,11 +27,11 @@
 
 .nav a {
 	text-decoration: none;
-	color: #88dfdf;
+	color: white;
 }
 
 .nav a:hover,
 .nav a:active,
 .nav a.active {
-	color: #e6fcfc;
+	color: rgb(98 198 201);
 }
