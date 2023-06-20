@@ -1,6 +1,6 @@
-# QStack 
+# QStack
 
-This is an app that help you archive your favourite quotes. This was a course project after going through the react-router concepts originally and I enhanced some features and functionalities.
+An app that help you archive your favourite quotes.
 
 ## Things I have learned to work with from this app
 
@@ -14,11 +14,10 @@ This is an app that help you archive your favourite quotes. This was a course pr
 - userParams
 - complex http hook and api
 
+## Features
 
-## Things I have added by myself
-
-- This course was built on react-router-dom@5. I have used and implemented all the features of react-router-dom@6 by myself.
-
+- This project was built on react-router-dom@5. I have used and implemented all the features of react-router-dom@6 by myself.
 - Added form validation and associated stylings.
-
 - Added github CI ( Continous Integration ) with Firebasae to automate things removing redundancy.
+- Filter for offensive words.
+- Sanitization.
